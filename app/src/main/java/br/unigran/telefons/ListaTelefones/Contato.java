@@ -1,4 +1,4 @@
-package br.unigran.telefons;
+package br.unigran.telefons.ListaTelefones;
 
 public class Contato {
 

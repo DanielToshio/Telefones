@@ -1,4 +1,4 @@
-package br.unigran.telefons;
+package br.unigran.telefons.ListaTelefones;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,11 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+
+
+import br.unigran.telefons.BancoDeDados.ContatoDB;
+import br.unigran.telefons.BancoDeDados.DBHelper;
+import br.unigran.telefons.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
         //banco de dados
         db = new DBHelper(this);
         //mapeia campos da tela
-        nome = findViewById(R.id.nameID);
-        telefone = findViewById(R.id.phoneID);
+        nome = findViewById(R.id.nomeID);
+        telefone = findViewById(R.id.telefoneID);
         datanascimento = findViewById(R.id.dateID);
         listagem = findViewById(R.id.listID);
         dados = new ArrayList(); //aloca lista
@@ -58,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                                                    View view, int i, long l) {
                         AlertDialog.Builder mensagem = new AlertDialog.Builder(view.getContext());
                         mensagem.setTitle("Opções");
-                        mensagem.setMessage("Escolha a opção que deseja realizar");
+                        mensagem.setMessage("O que deseja fazer?");
                         mensagem.setPositiveButton("Remover", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
 

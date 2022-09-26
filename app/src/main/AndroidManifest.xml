@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Telefons"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ListaTelefones.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Telefons</string>
+    <string name="digite_o_nome">Digite o nome</string>
+    <string name="telefone">Telefone</string>
+    <string name="data_de_nascimento">Data de Nascimento</string>
+    <string name="btnSalvar">Salvar</string>
 </resources>

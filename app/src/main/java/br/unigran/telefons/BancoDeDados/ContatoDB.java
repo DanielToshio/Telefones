@@ -7,7 +7,6 @@ import android.database.sqlite.SQLiteDatabase;
 import java.util.List;
 
 import br.unigran.telefons.ListaTelefones.Contato;
-import br.unigran.telefons.ListaTelefones.DBHelper;
 
 public class ContatoDB {
         private DBHelper db;
